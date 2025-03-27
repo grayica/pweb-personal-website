@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- INI NAVBAR -->
+      <nav>
+        <ul>
+          <li><img src="Aset Rahasia/Honor Of King.jpg" alt="icon header" width="60"/></li>
+
+          <li><a href="">Tentang Saya</a></li>
+          <li><a href="#pencapaian">Pencapaian</a></li>
+          <li><a href="#hero hok">Hero</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" id="darkModeToggle">Mode Hitam</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- SECTION HERO / HOME -->
+      <section id="hero">
+        <!-- KOLOM PERTAMA -->
+        <div class="col" id="col-hero1">
+          <div class="row-1">
+            <h1>Hi! Namaku</h1>
+            <h1 id="textjalan">Gusti Rayhananda Maulana M</h1>
+          </div>
+          <div class="row-2">
+            <p>Ini adalah personal website. Silahkan explore dan lihat apa yang saya punya. Kalau sudah lihat boleh kali donasinya, itung itung THR hehe</p>
+          </div>
+          <div class="row-3">
+            <a href="https://www.facebook.com/gusti.rayhananda.5" target="_blank">
+            <button><img src="Aset Rahasia/Facebook logo.png" alt="Logo" width="20"></button>
+            </a>
+            <a href="https://www.instagram.com/rayhanandagusti?igsh=bGtjbmtnMXkzazN5" target="_blank">
+            <button><img src="Aset Rahasia/Instagram_logo.png" alt="Logo" width="20"></button>
+            </a>
+            <a href="https://tl.honorofkings.com/v2/tl/29134_1_ol7Vw3GV0WH" target="_blank">
+            <button><img src="Aset Rahasia/HOK app.jpg" alt="Logo" width="20"></button>
+            </a>
+            <a href="https://saweria.co/BesokKemarinSore" target="_blank">
+            <button><img src="Aset Rahasia/Saweria.jpg" alt="Logo" width="20"></button>
+            </a>
+          </div>
+        </div>
+        <!-- KOLOM KEDUA -->
+        <div class="col" id="col-hero2">
+          <img src="Aset Rahasia/Gusti Rayhananda.jpg" alt="foto" width="300" />
+        </div>
+      </section>
+
+      <!-- SECTION MY EXPERIENCE -->
+      <section>
+        <table>
+          <!-- BARIS 1 -->
+          <tr>
+            <!-- KOLOM 1 -->
+            <td rowspan="4" width="50%">
+              <img src="Aset Rahasia/Rachel.jpg" alt="foto" width="400" />
+            </td>
+            <!-- KOLOM 2 -->
+            <td colspan="5">
+              <h2 id="pencapaian">Pencapaian Gweh</h2>
+            </td>
+          </tr>
+          <!-- BARIS 2 -->
+          <tr>
+            <!-- KOLOM 1 -->
+            <td>
+              <h1>Capai Rank Grandmaster Selama 3 Season di Honor Of Kings</h1>
+              <p>
+                Rank Grandmaster ibarat Rank Mythic di MLBB. 
+                Di Honor Of Kings, naikin ke rank GM gampang banget
+              </p>
+            </td>
+            <!-- KOLOM 2 -->
+            <td>
+              <h1>Artis Fesnuk di Grup Geteh</h1>
+              <p>
+                Gimana gak artis, menang lomba low cosplay di grup geteh, 
+                masuk yutub yutuber geteh.
+              </p>
+            </td>
+          </tr>
+          <!-- BARIS 3 -->
+          <tr>
+            <!-- KOLOM 1 -->
+            <td>
+              <h1>Menamatkan Game RDR2</h1>
+              <p>
+                Loh Game Masterpiece masa gak ditanamatin.
+                Tamat ampe 5 Kali ygy
+              </p>
+            </td>
+            <!-- KOLOM 2 -->
+            <td>
+              <h1>Punya Waifu di Game Geteh</h1>
+              <p>
+                Kalian lihat foto di kiri nah itu waifu saya di geteh namanya Rachel
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <!-- KOLOM 1 -->
+            <td>
+              <h1>Karbit di Semua Game</h1>
+              <p>
+                Game hanya hiburan jadi gak papah buat karbit di game
+              </p>
+            </td>
+            <!-- KOLOM 2 -->
+            <td>
+              <h1>Fomo di Semua Hal</h1>
+              <p>
+                kalau fomonya baik, bolehlah
+              </p>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <!-- Modal -->
+      <div id="heroModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+           <video id="modalVideo" controls></video>
+          <p id="modalDescription"></p>
+        </div>
+      </div>
+    </div>
+    </div>
+      <section class="card-wrapper">
+        <h2 id="hero hok">Hero Honor Of King Yang dipake buat push GM</h2>
+        <div class="card-container">
+          <div class="card" onclick="openModal('Allain')">
+            <img src="Aset Rahasia/Allain.jpg" alt="Hero">
+            <h2>Allain</h2>
+          </div>
+          <div class="card" onclick="openModal('Donghuang')">
+            <img src="Aset Rahasia/Donghuang.jpg" alt="Hero">
+            <h2>Donghuang</h2>
+          </div>
+          <div class="card" onclick="openModal('Erin')">
+            <img src="Aset Rahasia/Erin.jpg" alt="Hero">
+            <h2>Erin</h2>
+          </div>
+          <div class="card" onclick="openModal('Lady Sun')">
+            <img src="Aset Rahasia/Lady Sun.jpg" alt="Hero">
+            <h2>Lady Sun</h2>
+          </div>
+          <div class="card" onclick="openModal('Lam')">
+            <img src="Aset Rahasia/Lam.jpg" alt="Hero">
+            <h2>Lam</h2>
+          </div>
+          <div class="card" onclick="openModal('Li xin')">
+            <img src="Aset Rahasia/Li xin.jpg" alt="Hero">
+            <h2>Li Xin</h2>
+          </div>
+          <div class="card" onclick="openModal('Mai')">
+            <img src="Aset Rahasia/Mai.jpg" alt="Hero">
+            <h2>Mai Shiranui</h2>
+          </div>
+          <div class="card" onclick="openModal('Marcopolo')">
+            <img src="Aset Rahasia/Marcopolo.jpg" alt="Hero">
+            <h2>Marcopolo</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION FORM -->
+      <section>
+        <div class="contact" id="contact">
+            <h1>CONTACT ME</h1>
+            <p>Jika ada sesuatu yang mau ditanyakan bisa isi di bawah ya</p>
+            
+            <form id="whatsappForm">
+                <label for="name">Nama: </label>
+                <input type="text" id="name" name="name" required />
+                
+                <label for="message">Pesan: </label>
+                <textarea name="message" id="message" rows="6" required></textarea>
+                
+                <button type="button" onclick="sendToWhatsApp()">Kirim</button>
+            </form>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+          <p>© 2025 | Created with ❤️ by <strong>Gusti Rayhananda Maulana Muhammad
+            232410101083
+          </strong></p>
+      </div>
+  </footer>
+  </body>
+</html>

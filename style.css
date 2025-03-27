@@ -1,0 +1,455 @@
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color:#35363A;
+    margin: 0;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 80px;
+    justify-content: end;
+    box-shadow: 0px 2px 20px rgba(109, 109, 109, 0.2);
+    position: relative;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    padding: 10px 0px;
+    width: 100px;
+    box-shadow: 0px 2px 20px black;
+}
+
+nav ul li ul li {
+    padding: 10px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+body {
+    background-color: #F5F5DC;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F2CF97 ;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: 'Cinzel', 'Trajan Pro', serif;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+* {
+    font-family: 'Cinzel', 'Trajan Pro', serif;
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#hero {
+    margin-top: 200px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+#hero .col {
+    width: 50%;
+}
+
+section {
+    margin: 0px 80px;
+}
+
+#col-hero2 {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#col-hero2 img {
+    display: block;
+    margin: auto;
+    animation: floating 4s ease-in-out infinite;
+    position: absolute;
+}
+
+.row-1 {
+    color: #F2CF97;
+    font-size: 30px;
+    font-family: 'Cinzel', 'Trajan Pro', serif;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.row-1 #textjalan {
+    color: black;
+    font-size: 42px;
+    margin-top: -40px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    display: inline-block;
+    animation: typing 3s steps(50, end) forwards, blink 1s infinite;
+    font-family: 'Cinzel', 'Trajan Pro', serif;
+}
+
+.row-2 {
+    width: 80%;
+    margin-top: -50px;
+    margin-bottom: 35px;
+    color: rgb(72, 72, 72);
+}
+
+.row-3 {
+    gap: 15px;
+    align-items: center;
+}
+
+.row-3 button {
+    background-color: white;
+    color: gray;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    font-family: 'Cinzel', 'Trajan Pro', serif;
+}
+
+.row-3 button:hover {
+    background-color: #35363A;
+}
+
+table{
+    width: 100%;
+    border: none;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+td[colspan="2"]{
+    width: 50%;
+}
+
+table h2{
+    color: black;
+}
+
+table h1{
+    color: #F2CF97;
+}
+
+table p{
+    font-size: 14px;
+    color: #35363A;
+    font-family: 'Cinzel', 'Trajan Pro', serif;
+}
+
+
+@keyframes floatImage{
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-50px);}
+    100% {transform: translateY(0);}
+}
+
+td img{
+    display: block;
+    margin: auto;
+    animation: floatImage 3s ease-in-out infinite;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    align-items:center ;
+}
+
+div.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap'); 
+
+.contact {
+    text-align: center;
+    background: url('Aset Rahasia/HOK-background.jpg') no-repeat center center/cover; 
+    padding: 60px 20px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0px 8px 20px rgba(255, 215, 0, 0.4); 
+    font-family: 'Cinzel', serif; 
+    position: relative;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 15px;
+}
+
+.contact h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #FFD700; 
+    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid #FFD700;
+}
+
+.contact label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    color: #FFD700; 
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.contact textarea {
+    resize: none;
+}
+
+.contact button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+.contact button:hover {
+    background: linear-gradient(135deg, #FFA500, #FFD700);
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 1);
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container strong {
+    color: #FFD700; 
+}
+
+body.dark-mode {
+    background-color: #1a1a1a; 
+    color: #f2f2f2; 
+}
+
+
+body.dark-mode nav {
+    background-color: #121212;
+    box-shadow: 0px 2px 20px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode nav ul li a {
+    color: #f2f2f2;
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #ffd700;
+}
+
+body.dark-mode #hero {
+    background-color: #222;
+}
+
+body.dark-mode .row-1, 
+body.dark-mode .row-1 #textjalan {
+    color: #ffcc00;
+}
+
+body.dark-mode .row-3 button {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-mode .row-3 button:hover {
+    background-color: #555;
+}
+
+body.dark-mode .card {
+    background-color: #2a2a2a;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .contact {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .contact input,
+body.dark-mode .contact textarea {
+    background: #222;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-mode footer {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+body.dark-mode .modal-content {
+    background: #222;
+    color: white;
+}
+
+.modal-content video {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
